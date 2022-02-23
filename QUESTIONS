@@ -1,10 +1,15 @@
 Autodesk Training Questions
 Please feel free to add any questions here.
 1. Can you view more than 2 of the Revision History?
+     Currently only a dif is shown in revision history
 2. Possible to block the run of a pipeline when another is running? (Block Destroy while Deploy is running)
+     Potentially with Policy Engine (conditional) or via SPeL expression pulling execution status
 3. Can we see average run duration of pipelines and their stages? This will be useful to see abnormal executions.
+     Not within spinnaker
 4. We trigger our Spinnaker pipeline via CURL; this process is asynchronous and returns an EventID. What would be the best practices to monitor the progress of the pipeline execution? For example, if we want to wait for it to complete before continuing the caller process.
+     Simplest method would be to use a CURL to get the pipeline exeuction which shows the status (SwaggerUI)
 5. Would like to see the below use cases in the lab excercise or demo
  a) Pulling a secret from any secret manager and pass it in the pipeline as parameter
+     Not possible to pass secrets in the pipeline - use case?
  b) How do we authenticate to cloud to create resources. EX: role assigned or other ways.
-6. 
+     Within the Spinnaker-Config 
