@@ -1,6 +1,14 @@
 {
     "application": "sumeetpipeline",
-    "pipelines": [],
+    "pipelines": [ {
+            "application": "sumeetpipeline",
+            "name": "Test",
+            "appConfig": {},
+            "keepWaitingPipelines": false,
+            "lastModifiedBy": "anonymous",
+            "limitConcurrent": true,
+            "parameterConfig": []
+            }],
   "schema": "1",
   "stages": [
       {{ module "deploy.stage.module" }},
@@ -8,6 +16,5 @@
       {{ module "destroy.stage.module" }}
       ],
       "triggers": []
-    }
   ]
 }
