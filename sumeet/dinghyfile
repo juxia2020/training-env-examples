@@ -16,6 +16,5 @@
       {{ module "destroy.stage.module" }}
       ],
       "triggers": []
-    }
   ]
 }
