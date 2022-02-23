@@ -9,8 +9,7 @@
           {{ module "cleanup.stage.module" }},
           {{ module "destroy.stage.module" }}
           ],
-          "triggers": []
-      ]
+        "triggers": []
     }
   ]
 }
