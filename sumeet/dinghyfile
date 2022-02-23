@@ -2,7 +2,7 @@
     "application": "sumeetpipeline",
     "pipelines": [ {
             "application": "sumeetpipeline",
-            "name": "DinghyValidation",
+            "name": "Test",
             "appConfig": {},
             "keepWaitingPipelines": false,
             "lastModifiedBy": "anonymous",
