@@ -1,6 +1,14 @@
 {
     "application": "sumeetpipeline",
-    "pipelines": [],
+    "pipelines": [ {
+            "application": "sumeetpipeline",
+            "name": "DinghyValidation",
+            "appConfig": {},
+            "keepWaitingPipelines": false,
+            "lastModifiedBy": "anonymous",
+            "limitConcurrent": true,
+            "parameterConfig": []
+            }],
   "schema": "1",
   "stages": [
       {{ module "deploy.stage.module" }},
