@@ -2,3 +2,5 @@ Autodesk Training Questions
 Please feel free to add any questions here.
 1. Can you view more than 2 of the Revision History?
 2. Possible to block the run of a pipeline when another is running? (Block Destroy while Deploy is running)
+3. Can we see average run duration of pipelines and their stages? This will be useful to see abnormal executions.
+4. We trigger our Spinnaker pipeline via CURL; this process is asynchronous and returns an EventID. What would be the best practices to monitor the progress of the pipeline execution? For example, if we want to wait for it to complete before continuing the caller process.
