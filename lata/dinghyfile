@@ -1,8 +1,8 @@
 {
-    "application": "abctest",
+    "application": "lata",
     "pipelines": [
         {
-            "application": "abctest",
+            "application": "lata",
             "name": "DinghyValidation-2",
             "appConfig": {},
             "keepWaitingPipelines": false,
@@ -104,4 +104,3 @@
     }
   ]
 }
-

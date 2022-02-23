@@ -1,7 +1,6 @@
 {
-    "application": "nugroha",
-    "pipelines": [],
-  "schema": "1",
+    "application": "bhanub",
+    "pipelines": [
   "stages": [
       {{ module "deploy.stage.module" }},
       {{ module "cleanup.stage.module" }},
