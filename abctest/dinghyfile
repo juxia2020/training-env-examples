@@ -1,8 +1,8 @@
 {
-    "application": "jmoon",
+    "application": "abctest",
     "pipelines": [
         {
-            "application": "jmoon",
+            "application": "abctest",
             "name": "DinghyValidation-2",
             "appConfig": {},
             "keepWaitingPipelines": false,
