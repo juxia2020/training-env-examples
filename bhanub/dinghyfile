@@ -1,5 +1,5 @@
 {
-    "application": "jmoon",
+    "application": "bhanub",
     "pipelines": [
   "stages": [
       {{ module "deploy.stage.module" }},
