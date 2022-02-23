@@ -4,3 +4,7 @@ Please feel free to add any questions here.
 2. Possible to block the run of a pipeline when another is running? (Block Destroy while Deploy is running)
 3. Can we see average run duration of pipelines and their stages? This will be useful to see abnormal executions.
 4. We trigger our Spinnaker pipeline via CURL; this process is asynchronous and returns an EventID. What would be the best practices to monitor the progress of the pipeline execution? For example, if we want to wait for it to complete before continuing the caller process.
+5. Would like to see the below use cases in the lab excercise or demo
+ a) Pulling a secret from any secret manager and pass it in the pipeline as parameter
+ b) How do we authenticate to cloud to create resources. EX: role assigned or other ways.
+6. 
