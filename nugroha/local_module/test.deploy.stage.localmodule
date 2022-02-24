@@ -1,0 +1,55 @@
+{
+      "action": "plan",
+      "artifacts": [
+        {
+          "account": "training-env-examples",
+          "artifact": {
+            "artifactAccount": "training-env-examples",
+            "id": "b3a9db15-5a7b-49a3-a54c-8a55fe8a8446",
+            "reference": "https://github.com/${parameters.orgRepo}.git",
+            "type": "git/repo",
+            "version": "${parameters.branch}"
+          }
+        }
+      ],
+      "backendArtifact": {
+        "account": "github",
+        "artifact": {
+          "artifactAccount": "github",
+          "id": "159563b5-6739-4f73-bcf7-d04b325fb540",
+          "name": "https://api.github.com/repos/${parameters.orgRepo}/contents/${parameters.subdir}/backend.tf",
+          "reference": "https://api.github.com/repos/${parameters.orgRepo}/contents/${parameters.subdir}/backend.tf",
+          "type": "github/file",
+          "version": "${parameters.branch}"
+        }
+      },
+      "dir": "${parameters.subdir}",
+      "expectedArtifacts": [
+        {
+          "defaultArtifact": {
+            "customKind": true,
+            "id": "f018bb4d-8223-4844-a976-354be4c6f49c"
+          },
+          "displayName": "swift-insect-57",
+          "id": "52a60a6f-9240-4dcc-ada3-322e9bc8b715",
+          "matchArtifact": {
+            "artifactAccount": "embedded-artifact",
+            "id": "dfb77ae3-eee4-4470-bb80-a4c5dba0d057",
+            "name": "planfile",
+            "type": "embedded/base64"
+          },
+          "useDefaultArtifact": false,
+          "usePriorArtifact": false
+        }
+      ],
+      "name": "Terraform Plan",
+      "overrides": {
+        "region": "us-west-2",
+        "s3_bucket_name": "${parameters.createBucketName}"
+      },
+      "refId": "1",
+      "requisiteStageRefIds": [],
+      "terraformVersion": "0.12.31",
+      "type": "terraform",
+      "workspace": "${parameters.workspace}"
+    }

@@ -3,12 +3,10 @@
     "pipelines": [
         {
         "application": "nugroha",
-        "name": "DinghyValidation",
+        "name": "testapp",
         "stages": [
-          {{ module "deploy.stage.module" }},
-          {{ module "cleanup.stage.module" }},
-          {{ module "destroy.stage.module" }}
-          ],
+            {{ local_module "/local_module/test.deploy.stage.localmodule" }}
+        ],
         "triggers": []
     }
   ]
