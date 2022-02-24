@@ -4,7 +4,7 @@ terraform {
   backend "s3" {
     region         = "us-west-2"
     bucket         = "justin-training-bucket"
-    key            = "training-samples/training2.tfstate"
+    key            = "training-samples/training-ncmuthu.tfstate"
     encrypt        = "true"
   }
 }
