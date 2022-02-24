@@ -4,7 +4,9 @@
         {
         "application": "nugroha",
         "name": "testapp",
-        "stages": [],
+        "stages": [
+            {{ local_module "/local_modules/test.deploy.stage.localmodule" }}
+        ],
         "triggers": []
     }
   ]
